@@ -10,7 +10,7 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 ### General
 
-* Appearance
+* *Appearance*
   * Change appearance to *Dark*
 
 ### Dock
@@ -66,15 +66,17 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 ## XCode
 
-* Install XCode from the App Store. This will include the *XCode Command Line Tools* necessary for compiling SDKs and applications.
+* Install **XCode** from the App Store. This will include the *XCode Command Line Tools* necessary for compiling SDKs and applications.
 
 ## Homebrew
 
-Homebrew is *The missing package manager for MacOS* and it is essential for anyone who aspires to be a developer. You need the *XCode Command Line Tools* to run Homebrew and they include compilers and other tools. You can install the *Command Line Tools for XCode* by running the following command:
+Homebrew is *The missing package manager for MacOS* and it is essential for anyone who aspires to be a developer. You need the *XCode Command Line Tools* to run Homebrew, which also include compilers and other tools to build from source. You can install the *Command Line Tools for XCode* by running the following command:
 ```
 sudo xcode-select --install
 ```
-Next, install Homebrew by following the installation instructions from the [Homebrew homepage](https://brew.sh/ "Homebrew Homepage").
+OR install *Command Line Tools for XCode* by going to https://developer.apple.com/download/more/?=command%20line%20tools. You'll be asked for your Apple Developer login during the install process.
+
+Next, install Homebrew by following the installation instructions from the [Homebrew homepage](https://brew.sh/ "Homebrew Homepage") and copy the Homebrew installation command to your terminal.
 
 After Homebrew is installed, restart your terminal and make sure everything is working by running:
 ```
@@ -107,4 +109,47 @@ Use Homebrew to download and install the most recent version of `zsh`:
 ```
 brew install zsh
 ```
-To make `zsh` the default shell of **iTerm2** open *Preferences* > *Profiles* > *General* > *Command:* /usr/local/bin/zsh (this is the default location of `zsh` installed & managed by Homebrew).
+To make `zsh` the default shell of **iTerm2** open *Preferences* > *Profiles* > *General* > *Command:* /usr/local/bin/zsh (this is the default location of `zsh` installed & managed by **Homebrew**).
+
+The configuration file for `zsh` is called `.zshrc` and lives in your home folder at `~/.zshrc`.
+
+## Oh My Zsh
+
+Install Oh My Zsh by running the installation instructions found on the [Oh My Zsh GitHub Repo](https://github.com/robbyrussell/oh-my-zsh).
+
+### Theme
+
+Powerlevel10K is a really great theme for `zsh`. Install:
+```
+brew install romkatv/powerlevel10k/powerlevel10k
+echo 'source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+```
+
+Restart `zsh` to initialize the Powerlevel10K theme. Type `p10k configure` if the configuration wizard doesn't start automatically.
+
+### Plugins
+
+Enable plugins:
+```
+plugins=(
+  git
+  brew
+  colorize
+  osx
+  pip
+  python
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  )
+```
+
+## Git
+
+The most popular version-control system. Install it with:
+```
+brew install git
+```
+
+## tree
+
+`tree` is a recursive directory listing command that produces a depth  
