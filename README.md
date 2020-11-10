@@ -57,7 +57,7 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 * Change *default folder for screenshots*
   * Create folder *Screenshots* inside *Pictures* to store screenshots
-  * Run following commmand: `defaults write com.apple.screencapture location /Users/USERNAME/Pictures/Screenshots/
+  * Run following commmand: `defaults write com.apple.screencapture location /Users/USERNAME/Pictures/Screenshots/`
 
 ### Menubar
 
