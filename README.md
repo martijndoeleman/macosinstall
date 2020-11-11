@@ -70,7 +70,7 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 ## Homebrew
 
-Homebrew is *The missing package manager for MacOS* and it is essential for anyone who aspires to be a developer. You need the *XCode Command Line Tools* to run Homebrew, which also include compilers and other tools to build from source. You can install the *Command Line Tools for XCode* by running the following command:
+Homebrew is *the missing package manager for MacOS* and it is essential for anyone who aspires to be a developer. You need the *XCode Command Line Tools* to run Homebrew, which also include compilers and other tools to build from source. You can install the *Command Line Tools for XCode* by running the following command:
 ```
 sudo xcode-select --install
 ```
