@@ -10,7 +10,7 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 ### General
 
-* *Appearance*
+* Appearance
   * Change appearance to *Dark*
 
 ### Dock
@@ -150,6 +150,6 @@ The most popular version-control system. Install it with:
 brew install git
 ```
 
-## tree
+## Tree
 
 `tree` is a recursive directory listing command that produces a depth  
