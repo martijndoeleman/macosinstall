@@ -261,7 +261,25 @@ Restart your shell so the path changes take effect. You can check your path chan
 echo $PATH
 ```
 
-It should include `"$(pyenv init -)"`.
+It should include `"$(pyenv init -)"`. To update pyenv in the future, use:
+
+```
+brew upgrade pyenv
+```
+
+Instead of `install`. You can check out all the available versions of Python by running:
+
+```
+pyenv install --list
+```
+
+Subsequently, install the desired Python versions, for example:
+
+```
+pyenv install 3.5.2
+```
+
+The above command will install Python version 3.5.2. All installed Python versions are located in `~/.pyenv/versions`.
 
 ## Visual Studio Code
 
