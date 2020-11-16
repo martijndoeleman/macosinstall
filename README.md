@@ -127,6 +127,10 @@ Powerlevel10K is a really great theme for `zsh`. Install:
 
 ```
 brew install romkatv/powerlevel10k/powerlevel10k
+```
+
+After installation, add the theme to your `.zshrc` file by running:
+```
 echo 'source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 ```
 
