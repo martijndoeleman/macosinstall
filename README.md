@@ -149,9 +149,35 @@ plugins=(
   pip
   python
   vscode
-  zsh-syntax-highlighting
-  zsh-autosuggestions
   )
+```
+
+#### Zsh-autosuggestions
+
+To enable autosuggestions, run:
+
+```
+brew install zsh-autosuggestions
+```
+
+And add the following line to your `.zshrc` file:
+
+```
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
+#### Zsh-syntax-highlighting
+
+To enable syntax highlighting, run:
+
+```
+brew install zsh-syntax-highlighting
+```
+
+And add the following line to your `.zshrc` file:
+
+```
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 ## Git
