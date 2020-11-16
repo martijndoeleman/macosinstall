@@ -225,23 +225,53 @@ brew install tree
 
 ## Python
 
-To install the latest version of Python, run:
+Although macOS already comes with Python installed, you don't want to mess with the system Python. Therefore, you need to install your own version(s). My recommended ways to install Python on macOS are:
+
+1. Homebrew
+2. Pyenv
+
+### Homebrew Method
+Python 3 is the default version when installing via Homebrew by running:
 
 ```
 brew install python
 ```
 
+Executable scripts from Python packages you install will reside in `/usr/local/share/python`, add this to your `PATH`.
 
+### Pyenv Method
+
+`pyenv` is a Python version manager that can manage and install different versions of Python on one system. This is especially helpful when you need to test your code against several Python versions, or when you work with different Python versions in different projects.
+
+To install `pyenv` using Homebrew, run:
+
+```
+brew install pyenv
+```
+
+`pyenv` works by inserting a directory of *shims* in front of your standard `PATH`. Therefore, add `pyenv init` to your shell to enable shims and automcompletion. Make sure it is placed towards the end of the shell configuration file since it manipulates `PATH` during initialization.
+
+```
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+
+Restart your shell so the path changes take effect. You can check your path changes by running:
+
+```
+echo $PATH
+```
+
+It should include `"$(pyenv init -)"`.
 
 ## Visual Studio Code
 
-Install by running:
+Best editor, no questions asked. Install by running:
 
 ```
 brew cask install visual-studio-code
 ```
 
-After that, you can launch VS Code from terminal / iTerm2:
+After that, you can launch VS Code from the terminal / iTerm2 with:
 * `code .` will open VS Code in the current directory
 * `code myfile.txt` will open `myfile.txt` in VS Code in the current directory
 
