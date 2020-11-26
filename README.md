@@ -38,6 +38,11 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
   * Enable *Tap to click*
 * Scroll & Zoom
   * Disable *Natural* Scroll direction
+
+### Keyboard
+
+* Touch Bar shows *App Controls* (also check *Show Control Strip)
+* Press Fn key to *Show F1, F2, etc. Keys*
   
 ### Date & Time
 
