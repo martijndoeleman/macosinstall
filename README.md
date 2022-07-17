@@ -71,7 +71,7 @@ First, update MacOS to the most recent version. Go to **Apple Menu > About This 
 
 ## XCode
 
-* Install **XCode** from the App Store. This will include the *XCode Command Line Tools* necessary for compiling SDKs and applications.
+* Install **XCode** from the [Apple Developer Website](https://developer.apple.com/download/applications/). This will include the *XCode Command Line Tools* necessary for compiling SDKs and applications.
 
 ## Homebrew
 
